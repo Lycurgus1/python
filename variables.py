@@ -35,14 +35,20 @@
 # Exercise User Details
 
 # Create variable called first_name and last_name
-first_name = input("Enter first name here")
-last_name = input("Enter last name here ")
+first_name = input("Enter first name here \t")
+last_name = input("Enter last name here \t")
 
-# Create variable called age
+# # Create variable called age
 
+age = int(input("Enter age \t"))
 
 # Create variable named address
+
+address = input("Enter address \t")
 
 # Prompt user for information
 
 # Create a variable named full_name and display
+
+full_name = ('{} {}'.format(first_name, last_name))
+print(full_name, age, address)
