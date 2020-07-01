@@ -21,3 +21,10 @@ print(student_records.get("Name"))  # Different method of same thing
 student_records["Completed_lessons"].append("Lists")
 student_records["Completed_lessons"].append("Built in methods")
 print(student_records["Completed_lessons"])  # Checking work
+
+# Removing items
+student_records.pop("Topics covered") # Removes item associated with key
+student_records.popitem() # Removes last item added to list
+del student_records["Name"] # Removes item with specific key name
+
+# Can also clear copy and nest dictionaries.
