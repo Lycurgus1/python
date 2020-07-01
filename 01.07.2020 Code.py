@@ -108,11 +108,6 @@
 
 # student_records["Name"] = "Jeff"
 
-## adding two items to completed lessons then displaying it
-# student_records["Completed_lessons"].append("Lists")
-# student_records["Completed_lessons"].append("Built in methods")
-# print(student_records["Completed_lessons"])  # Checking work
-
 # print(student_records["Completed_lessons"][2]) # fetching index of list in dictionary
 # print(student_records["Name"]) # Fetching the value of name
 # print(sorted(student_records)) # Sorts according to keys
@@ -121,20 +116,121 @@
 # print(student_records["Name"])  # Gets value from key in dictionary
 # print(student_records.get("Name"))  # Different method of same thing
 
-# for x in student_records:
-#     print(student_records[x])
+## adding two items to completed lessons then displaying it
+# student_records["Completed_lessons"].append("Lists")
+# student_records["Completed_lessons"].append("Built in methods")
+# print(student_records["Completed_lessons"])  # Checking work
+
+## Sets - basically unordered lists
+
+# sports = {"Tennis", "Football", "Rugby"} # Creating a set
+# sports.add("Cricket") # Adding item to set
+# sports.discard("Tennis")  # Removing item from set
+# print(sports)
+#
+# x = frozenset([1, 2, 3, 4])# Frozen set, rarely used.
+# print(type(x))
+
+## Control flow
+
+# weather = "sunny"
+# conditional_weather = "clear"
+
+## using and operator and if loop
+# if weather == "sunny" and conditional_weather != "rainy": # Both must be true, due to and
+#     print("Beach time")
+# elif weather == "snow":
+#     print("Sad time")
+# else:
+#     print("Better luck next time")
+
+## using or operator and if loop
+# if weather == "sunny" or conditional_weather == "clear": # Both must be true, due to and
+#     print("Beach time")
+# elif weather == "snow":
+#     print("Sad time")
+# else:
+#     print("Better luck next time")
+
 
 ## For loops
 
-# cheese_types = ['Brie', 'Cheddar', 'Gouda']
-# cheese_types.append('Leicester Red')
-# if "Brie" in cheese_types:
-#     cheese_types.remove("Brie")
-#     print("We don't want french cheeses")
-# for x in cheese_types:
-#     if len(x) < 5:
-#         print(x)
+# list_data = [1, 2, 3, 4, 5]
+# for item in list_data:
+#     if item > 4:
+#         break # Does not print 5 as it does not match item condition, so code stops
+#     elif item < 2:
+#         print(item, "Cool")
 #     else:
-#         print(x, "has a long name")
+#         print(item)
+
+# word = "Lexicon"
+# for ch in word:
+#     print(ch.upper())
+
+## Printing in single line
+# word = "Lexicon"
+# new_word = ""
 #
-# print(cheese_types)
+# for x in word:
+#     new_word += " " + x
+#     if word[-1] == x:
+#         print(new_word)
+
+## Iterating through dictionary
+
+# student_records = {
+#     "Name": "Sam"  # Name is key, sam is value
+#     , "Stream": "DevOps"
+#     , "Topics_covered": 5
+#     , "Completed_lessons": ["Tuples", "Lists", "Variables"]
+# }
+#
+# for item in student_records:
+#     print(student_records[item])
+
+## While loop
+
+# x = 0
+#
+# while x < 5: # While variable name with condition
+#     print(f"this is a repeating message, message {x}") # Formatting allows placeholder
+#     if x == 4: # If loop optional in while loop.
+#         break
+#     x += 1
+
+### Exercises
+
+## Exercise with movie age limits
+
+# age = int(input("What is your age? \t"))
+#
+# if age > 21:
+#     print(f"You can go to Las Vegas, you are {age}")
+# elif age >= 18 < 21:
+#     print("You can watch anything")
+# elif 15 <= age < 18:
+#     print("You cannot watch 18+ films")
+# elif 12 < age < 15:
+#     print("You cannot watch 15+ or 18+ films")
+# elif age < 1:
+#     print("Enter a valid age please")
+# else:
+#     print("PG films only for you, I'm afraid")
+
+## Exercise with dictionary iteration
+
+student_records = {
+    "Name": "Brian"
+    , "Location": "Manchester"
+    , "Grade": 2
+    , "Skills": ["Agile trained", "Teamwork", "Organised"]
+}
+
+for x in student_records:
+    print(x, ':', (student_records[x]))
+
+# Or
+
+# for keys in student_records:
+#     print(keys, ":", student_records.get(keys))
