@@ -49,6 +49,43 @@
 #
 # my_first_function("jim", "Harry")
 
+## Using python library
+
+from random import random
+import math
+
+# print(random()) #Utilise random function from random library
+
+# float_num = 24.4
+# # Rounds float number
+# print(math.ceil(float_num))
+# # Rounds float number down
+# print(math.floor(float_num))
+# # Prints pi
+# print(math.pi)
+
+# def inches_to_cm(inch):
+#     cm = math.ceil(inch * 2.54)
+#     print("That converts to {} Centimetres".format(cm))
+#
+# inches_to_cm(10)
+
+## Same task but with user inpurt
+# def conversion():
+#     text = input("Do you want to convert centimetres or inches? Enter C for cms and I for inches \n")
+#     if text.upper() not in ("C", "I"):
+#         print("Try again")
+#     else:
+#         number = float(input("Number to convert\n"))
+#         if text.upper() == "C":
+#             print("That converts to", int(number / 2.54), "centimetres.")
+#         elif text.upper() == "I":
+#             print("That converts to", int(number * 2.54), "inches.")
+#
+#
+#
+# conversion()
+
 ## Default values in functions
 # def my_function(country = "Friesland"):
 #     if country in ("Denmark"):
@@ -59,10 +96,24 @@
 # my_function("Denmark")
 # my_function()
 
-# # Raising exception
+## Create a calculator with a class. Should have methods to +, -, /, *, %
+## Create class object
+## Run class
+class Python_Calulcator:
 
+    def add_values(self, num1, num2): # Self key word refers to the class
+        return num1 + num2
 
+    def subtract_values(self, num1, num2):
+        return num1 - num2
 
-x = 6
-if x < 5:
-    raise Exception("Sorry no numbers below 5")
+    def divide_values(self, num1, num2):
+        return num1 / num2
+
+    def multiply_values(self, num1, num2):
+        return num1 * num2
+
+    def remainder_values(self, num1, num2):
+        return num1 % num2
+
+print(Python_Calulcator.subtract_values("Number", 2, 4))
