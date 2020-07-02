@@ -10,13 +10,13 @@ class Reptile(Animal):
         self.amniotic_eggs = amniotic_eggs
 
     def seek_heat(self):
-        pass
+        return "Where is the lamp"
 
     def hunt(self):
-        pass
+        return "find some food"
 
     def use_venom(self):
-        pass
+        return
 
     def attract_mate_through_scent(self):
         pass

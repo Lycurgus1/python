@@ -11,13 +11,13 @@ class Animal:
         self.eyes = eyes
 
     def breathe(self):
-        pass
+        return "Oxygen is useful"
 
     def eat(self):
-        pass
+        return "Food is important"
 
     def procreate(self):
         pass
 
     def move(self):
-        pass
+        return "To get more food"

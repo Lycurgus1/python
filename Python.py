@@ -18,3 +18,6 @@ class Python(Snake):
 
     def shed_skin(self):
         pass
+
+obj1 = Python(True, False, False)
+print(obj1.hunt())
