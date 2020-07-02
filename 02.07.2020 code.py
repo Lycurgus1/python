@@ -99,21 +99,83 @@ import math
 ## Create a calculator with a class. Should have methods to +, -, /, *, %
 ## Create class object
 ## Run class
-class Python_Calulcator:
+# class Python_Calulcator:
+#
+#     def add_values(self, num1, num2): # Self key word refers to the class
+#         return num1 + num2
+#
+#     def subtract_values(self, num1, num2):
+#         return num1 - num2
+#
+#     def divide_values(self, num1, num2):
+#         return num1 / num2
+#
+#     def multiply_values(self, num1, num2):
+#         return num1 * num2
+#
+#     def remainder_values(self, num1, num2):
+#         return num1 % num2
+#
+# print(Python_Calulcator.subtract_values("Jim", -1, 3))
+#
+# object = Python_Calulcator()
+#
+# print(object.add_values(1, 2))
 
-    def add_values(self, num1, num2): # Self key word refers to the class
-        return num1 + num2
+## Object orientated python
 
-    def subtract_values(self, num1, num2):
-        return num1 - num2
+## Inheritance, polymorhpism, encapsulation, abstraction
 
-    def divide_values(self, num1, num2):
-        return num1 / num2
+class Dog:
+    amimal_kind = "Canine" # Class variable
 
-    def multiply_values(self, num1, num2):
-        return num1 * num2
+    # Init intalizes class
+    # Give/find name and color for dog
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
 
-    def remainder_values(self, num1, num2):
-        return num1 % num2
+    def bark(self):
+        return "woof, woof"
 
-print(Python_Calulcator.subtract_values("Number", 2, 4))
+# create a methods inside for sleep, breath, run, eat
+
+    # Encapsulation. This creates a private method. Abstraction is a expansion on this
+    def __sleep(self):
+        return "zzzzz"
+
+    # Pas enables this function without error
+    def breath(self):
+        pass
+
+    # Inheritance. This refers to creating sub classes, but run is using is a
+    # previously define attribute
+    def run(self):
+        return "Come back, {}".format(self.name)
+
+    # Polymorphism. Here the sub class method overrides the methods in the
+    # parent class when appropriate. It first searches it its own class, then
+    # in its inherited class
+    def eat(self):
+        print("{} is eating fast".format(self.__class__.__name__))
+
+class Retriever(Dog):
+    def eat(self):
+        print("Retriever is eating slowly")
+
+class Labrador(Dog):
+    pass
+
+jim = Dog("Canine", "White") # Creating object of our class
+peter = Dog("peter", "Brown")
+
+# print(jim.name)
+
+## Testing encapsulation
+# print(peter.__sleep())
+
+## Testing inheritance
+# print(peter.run())
+
+## Testing polymorphism
+print()
