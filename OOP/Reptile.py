@@ -1,8 +1,11 @@
 from Animal import Animal
 
+# Mentioning the class to be inherited
 class Reptile(Animal):
 
+    # This function intialises the class
     def __init__(self, alive, eyes,cold_blooded, tetrapod, heart_chambers, amniotic_eggs):
+        # The super line inherits attributes from the Animal Class
         super().__init__(alive, eyes)
         self.cold_blooded = cold_blooded
         self.tetrapod = tetrapod

@@ -6,6 +6,7 @@
 
 class Animal:
 
+    # Intialising the class
     def __init__(self, alive, eyes):
         self.alive = alive
         self.eyes = eyes
