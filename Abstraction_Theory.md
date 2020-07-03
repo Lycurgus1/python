@@ -1,4 +1,6 @@
 ### Abstraction
+- Method (abstraction method) defined in parent class
+- This then is required to mentioned in child classes, though can be overwritten
 ```python
 def bark(self)
     return "woof"
