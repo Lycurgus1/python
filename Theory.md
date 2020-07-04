@@ -1,4 +1,18 @@
-# Notes from day 1
+# Instructions
+- Minimum 2 methods and attributes
+- Parent class into child class
+- Pseudo coding
+
+# Repositries
+- Calculator example for inheritance DONE
+- Historical fight club for polymorphism
+    - Ibbi or georgina good example
+- Abstraction exercise- always bring water
+- encapsualtion cheese type
+
+
+# Theory for python.
+***Syntax found in individual python files***
 
 ***Python***
 - Most used language
