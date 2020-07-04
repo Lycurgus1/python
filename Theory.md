@@ -7,8 +7,9 @@
 - Calculator example for inheritance DONE
 - Historical fight club for polymorphism
     - Ibbi or georgina good example
-- Abstraction exercise- always bring water
+- Abstraction exercise- always bring water DONE
 - encapsualtion cheese type
+- APIs - just do from class notes
 
 
 # Theory for python.

@@ -14,7 +14,7 @@ class Dog:
     def bark(self):
         return "woof, woof"
 
-# create a methods inside for sleep, breath, run, eat
+    # create a methods inside for sleep, breath, run, eat
 
     # Encapsulation. This creates a private method. Abstraction is a expansion on this
     def __sleep(self):
