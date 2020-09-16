@@ -8,4 +8,4 @@ This is a compilation of Python notes and code in action, done as part of DevOps
   - OOP discusses object orientated python, with notes and exercises
   - Exercises discusses common python coding problems, such as Fizz Buzz
   
-  I hope you enjoy reading this!
+  I hope you enjoy reading it
