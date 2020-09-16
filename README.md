@@ -1,6 +1,8 @@
 # What is this?
 
-This is a compilation of Python notes and code in action
+This is a compilation of Python notes and code in action, done as part of DevOps training at Sparta Global.
+
+## It contains:
   - Day 1 discusses basic theory such as lists and variables
   - Day 2 discusses more advanced theory such as Classes, functions and importing
   - OOP discusses object orientated python, with notes and exercises
